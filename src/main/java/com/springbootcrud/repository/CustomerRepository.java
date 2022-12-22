@@ -1,11 +1,13 @@
 package com.springbootcrud.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
 import com.springbootcrud.model.Customers;
 
-@Repository
+/* 
+ * create repository for storage, retrieval, search, update and delete operation on objects.
+ */
+
 public interface CustomerRepository extends JpaRepository<Customers, Long> {
 
 }
