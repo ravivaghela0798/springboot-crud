@@ -27,20 +27,20 @@ public class CustomerController {
 	@PostMapping("/saveCustomer")
 	public String saveCustomer(@RequestBody Customers customer) {
 		customerService.saveCustomer(customer);
-		return "Add " + customer.getFirstName() +" "+ customer.getLastName() + "customer list" ;
+		return "Add " + customer.getFirstName() + " " + customer.getLastName() + "customer list";
 	}
 
 	@GetMapping("/getCustomerById/{id}")
 	public Customers getCustomerById(@PathVariable("id") Long id) {
 		return customerService.getCustomerById(id);
 	}
-	
+
 	@GetMapping("/getAllCustomers")
 	public List<Customers> getAllCustomers() {
 		List<Customers> customers = customerService.getallCustomers();
 		return customers;
 	}
-	
+
 	@PutMapping("/updateCustomer/{id}")
 	public Customers updateCustomer(@PathVariable(value = "id") Long id, @RequestBody Customers customer) {
 		return customerService.updateCustomer(id, customer);
