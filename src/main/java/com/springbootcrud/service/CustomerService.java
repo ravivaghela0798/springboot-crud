@@ -13,10 +13,10 @@ public interface CustomerService {
 	Customers saveCustomer(Customers customer);
 
 	Customers getCustomerById(Long id);
+
 	List<Customers> getallCustomers();
 
 	Customers updateCustomer(Long id, Customers customer);
-
 
 	void deleteCustomer(Long id);
 }
