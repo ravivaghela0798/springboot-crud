@@ -2,6 +2,8 @@ package com.springbootcrud.model;
 
 import java.sql.Date;
 
+import com.springbootcrud.enums.Gender;
+
 /* 
  * create customer entity and create columns, 
  * for getter, setter and constructors use Lombok Project 
@@ -9,6 +11,8 @@ import java.sql.Date;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -54,8 +58,9 @@ public class Customers {
 	@Column(name = "age", nullable = false, length = 3)
 	private Integer age;
 
+	@Enumerated(EnumType.STRING)
 	@Column(name = "gender", nullable = false)
-	private String gender;
+	private Gender gender;
 
 	@Column(name = "email_id", nullable = false, length = 50, unique = true)
 	private String email;
