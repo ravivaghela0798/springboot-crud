@@ -8,11 +8,11 @@
 		<version>3.0.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.springboot-crud</groupId>
-	<artifactId>sprinboot-crud</artifactId>
+	<groupId>com.springbootcrud</groupId>
+	<artifactId>springboot-crud</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>sprinboot-crud</name>
-	<description>Spring Boot Crud App</description>
+	<name>SpringBootCrudApplication</name>
+	<description>Spring boot Crud Application</description>
 	<properties>
 		<java.version>19</java.version>
 	</properties>
