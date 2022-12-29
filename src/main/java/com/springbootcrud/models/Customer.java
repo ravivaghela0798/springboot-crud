@@ -1,4 +1,4 @@
-package com.springbootcrud.model;
+package com.springbootcrud.models;
 
 import java.sql.Date;
 
@@ -31,7 +31,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "customer_details")
-public class Customers {
+public class Customer {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
